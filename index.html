@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Muskan!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Happy Birthday muski!</h1>
+      <p>You are the most special person in my life. Here's a little something to make your day even brighter!</p>
+    </header>
+
+    <section class="special-message">
+      <h2>Special Message for You</h2>
+      <p>Click the button below to read a special message just for you!</p>
+      <button id="messageButton">Read Your Special Message</button>
+      <div id="messageContent" class="hidden">
+        <p>Dear Musi,</p> I Hope u might have liked a small gift from me , thank you so much for me stand by my side every time , it has been a long journey together right? . I still remember , woh ladki joki bharat sir ke class me mujhe mere debate ke rehearsal ke bichh me hasa di thi , pta nhi tha ki wahi ladki mere aaj hasi aur motivation reason banegi . it has been a journey from being Classmates -> Rivals -> friends->bestfriends -> Frienmy -> Future Couples. I also want to thank Sasu mummy and Papaji , ki Uhone ne aaj ke din ek speacial gussel bomb ko iss duniya me laya 😁😁😁. Once again , A bahut very happy janamandinwala birthday Mubarak .Stay always ur name , Muskan at ur face  🎂🎁!</p>
+        <p>With all my love,</p>
+        <p>[Ur's SADU AKA kirti raj]</p>
+      </div>
+    </section>
+
+    <section class="gift">
+      <h2>Your Special Gift</h2>
+      <p>Here's a little gift for you. Click the button to reveal your gift!</p>
+      <button id="giftButton">Open Your Gift</button>
+      <div id="videoContainer" class="hidden">
+        <video controls>
+          <source src="C:\Users\mrkir\OneDrive\Desktop\bday\video\WhatsApp Video 2025-03-21 at 22.28.34_fb672927.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ by [Kirti Raj]</p>
+    </footer>
+  </div>
+
+  <script>
+    // JavaScript to handle the special message reveal
+    const messageButton = document.getElementById('messageButton');
+    const messageContent = document.getElementById('messageContent');
+
+    messageButton.addEventListener('click', () => {
+      messageContent.classList.remove('hidden');
+      messageButton.style.display = 'none'; // Hide the button after clicking
+    });
+
+    // JavaScript to handle the gift reveal
+    const giftButton = document.getElementById('giftButton');
+    const videoContainer = document.getElementById('videoContainer');
+
+    giftButton.addEventListener('click', () => {
+      videoContainer.classList.remove('hidden');
+      giftButton.style.display = 'none'; // Hide the button after clicking
+    });
+  </script>
+</body>
+</html>
